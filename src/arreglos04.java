@@ -7,7 +7,38 @@ public class arreglos04 {
          y que luego muestre el arreglo resultante
         */
 
-        int[] elementos = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Scanner sc = new Scanner(System.in);
+        int[] arreglo1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.println("El arreglo actual es:");
+
+        // Recorremos y mostramos cada elemento del arreglo
+        for (int elemento : arreglo1) {
+            System.out.print(elemento + " ");
+        }
+
+        System.out.println("\n¿Qué elementos del arreglo desea eliminar? (0:Pares, 1:Impares)");
+        int opcion = sc.nextInt();
+
+
+
+
+
+
+
+        // Crear un a funcion que muestre el arreglo resultante
+
+
+
+
+
+
+
+
+
+
+
+        /*int[] elementos = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         Scanner sc = new Scanner(System.in);
 
@@ -28,9 +59,6 @@ public class arreglos04 {
 
             // Crear una funcion que elimine los impares
 
-        } else System.out.println("Valor no valido");
-
-
-        // Crear un a funcion que muestre el arreglo resultante
+        } else System.out.println("Valor no valido");*/
     }
 }
