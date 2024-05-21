@@ -1,5 +1,4 @@
 package ejercicios;
-
 import java.util.Scanner;
 
 /*
@@ -10,6 +9,7 @@ import java.util.Scanner;
         Traumatología: 21%
     Obtener la cantidad de dinero que recibirá cada área para cualquier monto presupuestal.
 */
+
 public class ej03 {
     public static void main(String[] args) {
         final double URGENCIAS = 0.37;

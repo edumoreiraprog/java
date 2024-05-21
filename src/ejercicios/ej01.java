@@ -1,12 +1,11 @@
 package ejercicios;
+import java.util.Scanner;
 
 /*
  Calcula el precio de un boleto de viaje,
  tomando en cuenta el número de kilómetros que se van a recorrer,
  siendo el precio $45 por Km.
 */
-
-import java.util.Scanner;
 
 public class ej01 {
     public static void main(String[] args) {

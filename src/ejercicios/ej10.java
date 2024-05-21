@@ -1,5 +1,4 @@
 package ejercicios;
-
 import java.util.Scanner;
 
 /*
@@ -7,6 +6,7 @@ import java.util.Scanner;
     sabiendo que aprueba si su promedio de tres calificaciones es mayor o igual a 60;
     desaprueba en caso contrario.
 */
+
 public class ej10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

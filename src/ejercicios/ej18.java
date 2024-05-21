@@ -1,5 +1,4 @@
 package ejercicios;
-
 import java.util.Scanner;
 
 /*
@@ -11,6 +10,7 @@ import java.util.Scanner;
     - si exceden de 8 se pagan las primeras 8 al doble de las horas normales
     y el resto al triple.
 */
+
 public class ej18 {
     public static void main(String[] args) {
 
@@ -44,6 +44,6 @@ public class ej18 {
 
         System.out.println("Horas normales trabajadas: " + hNormal + " = $" + totalNormal);
         System.out.println("Horas extra trabajadas: " + hExtra + " = $" + totalExtra);
-        System.out.println("Total (Horas normales + Horas extra): $" + (totalNormal + totalExtra));
+        System.out.println("Total (horas normales + horas extra): $" + (totalNormal + totalExtra));
     }
 }
