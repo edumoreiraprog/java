@@ -24,10 +24,37 @@ import java.util.Scanner;
 
 public class ModeloParcial2 {
     public static void main(String[] args) {
-        ArrayList<String> autos = new ArrayList<String>();
+        ArrayList<String> autos = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
-        mostrarMenu();
+        int opcion;
+
+        do {
+            mostrarMenu();
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.print("Ingrese el nombre del auto: ");
+                    String auto = sc.next();
+                    agregarAuto(autos, auto);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    listarAutos(autos);
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                default:
+            }
+        } while (opcion != 7);
 
     }
 
@@ -43,6 +70,16 @@ public class ModeloParcial2 {
         System.out.println("6. Editar vehículo por índice");
         System.out.println("7. Salir");
         System.out.println("================================================");
-        System.out.println("Por favor, ingrese el número de la opción que desea realizar:");
+        System.out.print("Por favor, ingrese el número de la opción que desea realizar:");
+    }
+
+    public static void agregarAuto(ArrayList<String> autos, String auto) {
+        autos.add(auto);
+        System.out.println("El auto se agrego correctamente.");
+    }
+
+    public static void listarAutos(ArrayList<String> autos) {
+        System.out.println("Lista de vehiculos acual:");
+        System.out.println(autos);
     }
 }
