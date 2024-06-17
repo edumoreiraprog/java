@@ -1,3 +1,5 @@
+package Varios;
+
 public class arreglos01 {
     public static void main(String[] args) {
         // Crear un programa que recorra un arreglo y que muestre su contenido.

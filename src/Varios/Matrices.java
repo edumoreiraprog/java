@@ -1,3 +1,5 @@
+package Varios;
+
 import java.util.Scanner;
 
 public class Matrices {
@@ -15,6 +17,9 @@ public class Matrices {
         cargarMatriz(numeros, nFilas, nColumnas, sc);
 
         mostrarMatriz(numeros, nFilas, nColumnas);
+        recorrerConForEach(numeros);
+
+        System.out.println(numeros.length);
     }
 
     public static void cargarMatriz(int [][] matriz, int nFilas, int nColumnas, Scanner sc) {
@@ -31,6 +36,17 @@ public class Matrices {
         for (int i = 0; i < nFilas; i++) {
             for (int j = 0; j < nColumnas; j++) {
                 System.out.print("\t" + matriz[i][j]);
+            }
+            System.out.println("\n");
+
+        }
+    }
+
+    public static void recorrerConForEach(int [][] matriz) {
+        System.out.println("Recorriendo con ForEach: ");
+        for (int [] fila : matriz) {
+            for (int elemento : fila) {
+                System.out.print("\t" + elemento);
             }
             System.out.println("\n");
         }

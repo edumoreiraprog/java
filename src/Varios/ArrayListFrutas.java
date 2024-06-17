@@ -1,3 +1,5 @@
+package Varios;
+
 import java.util.ArrayList;
 
 public class ArrayListFrutas {

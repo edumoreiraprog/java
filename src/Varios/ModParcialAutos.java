@@ -1,4 +1,4 @@
-
+package Varios;
 /*
     El programa debe mostrar un menú de opciones al usuario,
     permitiéndole interactuar con el sistema de venta de vehículos

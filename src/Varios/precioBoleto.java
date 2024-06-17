@@ -1,4 +1,4 @@
-// "psvm" : Abreviatura del método "public static void main(String[] args) {}"
+package Varios;// "psvm" : Abreviatura del método "public static void main(String[] args) {}"
 
 import java.util.Scanner;
 
