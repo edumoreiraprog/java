@@ -18,6 +18,6 @@ public class Caja {
     }
 
     public String toString() {
-        return "\nCaja N°: " + NroCaja + "\n\t" + empleado.toString();
+        return "\nCaja N°: " + NroCaja + "\n" + empleado.toString();
     }
 }

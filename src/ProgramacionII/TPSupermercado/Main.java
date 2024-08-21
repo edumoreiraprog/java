@@ -53,25 +53,21 @@ public class Main {
                     break;
                 case 5:
                     //Ir a pagar
-                    boolean mayorista = false;
-                    mostrarCaja(cajas);
-                    System.out.println("¿Es cliente mayorista? (1: Si, 2: No)");
-
-                    if ( sc.nextInt() == 1) mayorista = true;
-
-                    System.out.println("El cliente es mayorista?" + mayorista);
-                    sc.nextLine();
+                    mostrarTicket(cajas, carrito, sc);
+                    op = 6;
                     break;
                 case 6:
                     //Salir
                     System.out.println("Gracias, vuelva prontos.");
                     break;
-                default: //Informar que se ingreso una opción incorrecta
+                default:
                     System.out.println("¡¡¡Opción ingresada incorrecta!!!");
                     System.out.print("Presione cualquier tecla para continuar...");
                     sc.nextLine();
             }
         } while (op != 6);
+
+
     }
 
     public static void mostrarMensaje() {
@@ -91,10 +87,10 @@ public class Main {
 
     public static void cargarProductos(ArrayList<Producto> productos) {
         productos.add(new Producto("Leche", 1500));
-        productos.add(new Producto("Pan", 1350));
+        productos.add(new Producto("Pan  ", 1350));
         productos.add(new Producto("Arroz", 2200));
         productos.add(new Producto("Huevos", 1200));
-        productos.add(new Producto("Azúcar", 1000));
+        productos.add(new Producto("Azucar", 1000));
         productos.add(new Producto("Yerba", 3500));
         productos.add(new Producto("Queso", 1900));
         productos.add(new Producto("Gaseosa", 2300));
@@ -136,6 +132,7 @@ public class Main {
             if (Objects.equals(producto.getNombre(), prodEliminar)) {
                 existe = true;
                 carrito.remove(producto);
+                break;
             }
         }
 
@@ -163,21 +160,55 @@ public class Main {
         cajas.add(new Caja(new Empleado("Pedro", "Gómez", 49500), 3));
     }
 
-    public static void mostrarCaja(ArrayList<Caja> cajas) {
-        // Genera un número aleatorio entre 0 y 2
+    public static void mostrarTicket(ArrayList<Caja> cajas, ArrayList<Producto> productos, Scanner sc) {
+        // Genera un número aleatorio entre 1 y 3
         int numCaja = numAleatorio(3);
-        numCaja++;
+        boolean mayorista = false;
+        double total = 0;
 
-        for (Caja caja: cajas) {
-            if (caja.getNroCaja() == numCaja) {
-                System.out.println("\n");
-                System.out.println("================================================");
-                System.out.println("\t\t\tFinalizando la compra");
-                System.out.println("================================================");
-                System.out.println("\t" + caja);
-                break;
-            }
+        System.out.println("\n================================================");
+        System.out.println("\t\t\tFinalizando la compra");
+        System.out.println("================================================");
+
+        System.out.print("Ingrese su apellido: ");
+        String apellido = sc.nextLine();
+
+        System.out.print("Ingrese su nombre: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("¿Es cliente mayorista? (1: Si, 2: No): ");
+        if ( sc.nextInt() == 1) mayorista = true;
+
+        Cliente cliente = new Cliente(apellido, nombre, mayorista);
+
+        System.out.println("\n================================================");
+        System.out.println("Caja Nº: " + cajas.get(numCaja).getNroCaja());
+        System.out.print("Usted fue atendido por: ");
+        System.out.print(cajas.get(numCaja).getEmpleado().getApellido());
+        System.out.print(", " + cajas.get(numCaja).getEmpleado().getNombre());
+
+        System.out.println("\n" + cliente);
+
+        System.out.println("\n\n\tProducto\t\t\tPrecio");
+        System.out.println("------------------------------------------------");
+
+        for (Producto producto : productos){
+            System.out.println("\t" + producto);
+            total += producto.getPrecio();
         }
+
+        System.out.println("\n\tTotal\t\t\t\t" + (total));
+
+        if (mayorista) {
+            double descuento = total * 0.10;
+            System.out.println("\tCon descuento\t\t" + (total - descuento));
+        } else {
+            System.out.println("\n\tComo minorista no posee descuentos");
+        }
+
+        System.out.println("\n================================================");
+        System.out.println("\t\t\t¡Gracias por su compra!");
+        System.out.println("================================================");
     }
 
     public static int numAleatorio(int num) {

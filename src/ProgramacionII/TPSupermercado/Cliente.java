@@ -1,11 +1,15 @@
 package ProgramacionII.TPSupermercado;
 
 public class Cliente extends Humane{
-    private int tipo;
+    private boolean mayorista;
 
-    public Cliente(String apellido, String nombre, int tipo) {
+    public Cliente(String apellido, String nombre, boolean mayorista) {
         super(apellido, nombre);
-        this.tipo = tipo;
+        this.mayorista = mayorista;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente: " + super.toString() + "\nMayorista: " + mayorista;
+    }
 }
