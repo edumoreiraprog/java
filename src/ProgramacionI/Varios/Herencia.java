@@ -17,7 +17,7 @@ class Persona {
     }
 
     public void verAtributos() {
-        System.out.println("Nombre: " + nombre + ", Edad: " + edad);
+        System.out.print("\nNombre: " + nombre + "\nEdad: " + edad);
     }
 }
 
@@ -32,6 +32,6 @@ class Empleado extends Persona {
     @Override
     public void verAtributos() {
         super.verAtributos();
-        System.out.println("Sueldo: " + sueldo);
+        System.out.print("\nSueldo: " + sueldo +"\n");
     }
 }
