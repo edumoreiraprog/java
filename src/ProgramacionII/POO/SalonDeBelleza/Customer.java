@@ -1,3 +1,5 @@
+package ProgramacionII.POO.SalonDeBelleza;
+
 public class Customer {
     private String name;
     private boolean member = false;

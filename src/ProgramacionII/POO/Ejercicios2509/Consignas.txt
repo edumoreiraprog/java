@@ -1,0 +1,41 @@
+Ejercicio 1:
+Crea una clase Cliente que tenga una CuentaBancaria. La clase CuentaBancaria
+debe contener información como el número de cuenta y el saldo. Implementa
+métodos para depositar y retirar dinero de la cuenta. En el programa principal,
+crea un cliente y asocia una cuenta bancaria a él.
+
+Ejercicio 2:
+Diseña una clase Biblioteca que contenga una lista de Libros. Cada Libro debe
+tener un título y un autor, como mínimo. La clase Biblioteca debe tener métodos
+para agregar libros y mostrar todos los libros disponibles. En el programa
+principal, crea una biblioteca, agrega varios libros y muestra la lista.
+
+Ejercicio 3:
+Implementa una relación entre Estudiante y Curso. Un Estudiante puede estar
+inscrito en múltiples Cursos, y un Curso puede tener múltiples Estudiantes. Crea
+las clases necesarias y métodos para inscribir estudiantes en cursos y mostrar
+los cursos de un estudiante.
+
+Ejercicio 4:
+Crea una clase base Vehículo y clases derivadas Coche y Motocicleta. La clase
+Coche debe tener un Conductor y la clase Motocicleta debe tener un Pasajero.
+Implementa métodos que permitan obtener la información del vehículo y del
+conductor/pasajero.
+
+Ejercicio 5:
+Diseña un sistema de gestión de proyectos donde cada Proyecto tenga varios
+Empleados asociados. Cada Empleado debe tener un nombre y un rol en el
+proyecto. Implementa métodos para agregar empleados a un proyecto y mostrar
+la lista de empleados que trabajan en un proyecto específico.
+
+Ejercicio 6:
+Crea una clase Producto que contenga información sobre un producto, como
+nombre y precio. Crea otra clase Categoría que contenga una lista de productos.
+Implementa métodos para agregar productos a una categoría y mostrar todos los
+productos de una categoría.
+
+Ejercicio 7:
+Diseña un sistema de reservas donde cada Cliente pueda hacer varias Reservas
+de Habitaciones. La clase Habitación debe tener información como el número y
+el tipo. Implementa métodos para realizar una reserva y listar todas las reservas
+de un cliente.

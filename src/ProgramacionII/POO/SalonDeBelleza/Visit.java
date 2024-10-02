@@ -1,3 +1,5 @@
+package ProgramacionII.POO.SalonDeBelleza;
+
 import java.time.LocalDate;
 
 public class Visit {

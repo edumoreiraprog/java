@@ -1,3 +1,5 @@
+package ProgramacionII.POO.SalonDeBelleza;
+
 public class DiscountRate {
     private double discountPremium = 0.2;
     private double discountGold = 0.15;
