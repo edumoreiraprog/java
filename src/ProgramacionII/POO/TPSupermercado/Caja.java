@@ -1,4 +1,4 @@
-package ProgramacionII.TPSupermercado;
+package ProgramacionII.POO.TPSupermercado;
 
 public class Caja {
     private Empleado empleado;

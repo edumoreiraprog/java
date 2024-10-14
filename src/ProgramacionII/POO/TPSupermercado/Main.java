@@ -1,4 +1,4 @@
-package ProgramacionII.TPSupermercado;
+package ProgramacionII.POO.TPSupermercado;
 
 import java.util.ArrayList;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package ProgramacionII.TPSupermercado;
+package ProgramacionII.POO.TPSupermercado;
 
 class Humane {
     private String apellido;

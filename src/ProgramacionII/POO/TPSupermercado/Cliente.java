@@ -1,4 +1,4 @@
-package ProgramacionII.TPSupermercado;
+package ProgramacionII.POO.TPSupermercado;
 
 public class Cliente extends Humane{
     private boolean mayorista;
